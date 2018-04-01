@@ -11,11 +11,16 @@
     <string name="action_sign_up">Sign up</string>
     <string name="action_send">Send</string>
     <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">Password too short or does not match</string>
+    <string name="error_invalid_password">Password too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="auth_failed">User Registration failed :(</string>
     <string name="sample_message">Hello!</string>
+    <string name="no_match">Password does not match</string>
+    <string name="login_failed"> There was a problem signing in </string>
+    <string name="chat_hint">Enter email of user you want to chat with</string>
+    <string name="no_such_user">No such user exists</string>
 </resources>
