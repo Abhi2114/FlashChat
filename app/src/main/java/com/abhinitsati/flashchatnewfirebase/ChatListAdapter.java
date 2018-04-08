@@ -24,7 +24,6 @@ public class ChatListAdapter extends BaseAdapter{
     private DatabaseReference mDatabaseReference;
     private String mEmail;  // email of the user that is viewing these messages
     private ArrayList<DataSnapshot> mSnapshotList;
-    private String mDBLocation;
 
     private ChildEventListener mEventListener = new ChildEventListener() {
         @Override
@@ -61,12 +60,11 @@ public class ChatListAdapter extends BaseAdapter{
                     String email, String DBLocation) {
         mActivity = activity;
         mEmail = email;
-        // init the DB location
-        mDBLocation = DBLocation;
 
         // database reference to the messages location
         // this is the location where all messages are stored
         mDatabaseReference = databaseReference.child(DBLocation);
+
         // add a listener to the DatabaseRef
         // add a listener to detect changes made to the Database
         mDatabaseReference.addChildEventListener(mEventListener);
